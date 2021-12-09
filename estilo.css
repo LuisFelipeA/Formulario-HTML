@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(54, 10, 95);
+    margin-left: 7%;
+    
+}
+
+#subtitulo{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(54, 10, 95);
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    border: 0;
+}
+body{
+    background: rgb(197, 197, 235);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+    color: rgb(54, 10, 95);
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+    font-size: 1em;
+
+}
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    display: inline-block;
+}
+
+fieldset.grupo .campo{
+    float:left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid blueviolet;
+    box-shadow:1px 1px 1px blueviolet;
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+
+.botao{
+    font-size: 1.2em;
+    background: rgb(132, 0, 255);
+    color: white;
+    box-shadow:1px 1px 1px blueviolet;
+    position: absolute;
+    top:90%;
+    left:50%
+}
+
+.botao:hover{
+    background: #ccbbff;
+    color: black;
+}
+
+#checkbox{
+    display: inline-block;
+}
+
+.grupo{
+    display: block;
+}
+

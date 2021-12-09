@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+
+        <div>
+            <h1 id="titulo">Cadastro de DEVs</h1>
+            <p id="subtitulo">Complete suas informações</p>
+        </div>
+    <form>    
+        <div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label>Nome</label><br>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label>Sobrenome</label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset><br>
+        </div>
+
+        <div class="campo">
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label>Tipo de DEV:</label>
+            <br>
+            <input type="radio" name="dev" id="front-end" value="front-end" checked>
+            <label><p>Front-end</p></label>
+
+            <input type="radio" name="dev" id="back-end" value="back-end">
+            <label><p>Back-end</p></label>
+
+            
+            <input type="radio" name="dev" id="fullstack" value="fullStack">
+            <label><p>FullStack</p></label>
+        </div>
+
+        <div class="campo">
+            <label>Nivel</label>
+            <select id="nivel">
+                <option selected disabled value="">Selecione</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+
+        <fieldset id="checkbox">
+            <div>
+                <label>Tecnologias que utiliza:</label><br>
+
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="javascript" id="javascript">
+                <label for="javascript">JavaScript</label>
+
+                <input type="checkbox" name="php" id="php">
+                <label for="php">PHP</label>
+
+                <input type="checkbox" name="python" id="python">
+                <label for="python">Python</label>
+            </div><br>
+        </fieldset>
+
+        <div class="campo">
+            <label>Suas experiencias:</label>
+            <textarea row="6" style="width: 32em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Cadastrar</button>            
+
+
+    </form>
+
+</body>
+</html>
